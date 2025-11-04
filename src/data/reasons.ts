@@ -50,5 +50,5 @@ export const reasons = [
   "Your unwavering loyalty and trust",
   "The future we're building together",
   "How you love me, flaws and all",
-  "Simply for being YOU - my Madhu"
+  "Simply for being YOU - my Chimtu ga"
 ];

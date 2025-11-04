@@ -40,7 +40,7 @@ const Index = () => {
           </h1>
           
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground drop-shadow-lg animate-fade-in">
-            Madhu! 🎉
+            Chimtu ga! 🎉
           </h2>
 
           <div className="flex items-center justify-center gap-3 text-2xl md:text-3xl text-foreground/90 drop-shadow-md">
@@ -69,7 +69,7 @@ const Index = () => {
             A Message From My Heart
           </h2>
           <p className="text-lg text-muted-foreground">
-            For Madhu, with all my love
+            For Chimtu ga, with all my love
           </p>
         </div>
         <LoveLetter />
@@ -82,7 +82,7 @@ const Index = () => {
             Our Beautiful Moments Together
           </h2>
           <p className="text-lg text-muted-foreground">
-            Madhu, every photo tells our story
+            Chimtu ga, every photo tells our story
           </p>
         </div>
         <PhotoGallery />
@@ -99,7 +99,7 @@ const Index = () => {
             <Heart className="text-primary w-8 h-8" fill="currentColor" />
           </div>
           <p className="text-lg text-muted-foreground">
-            One for every week of the year, Madhu ✨
+            One for every week of the year, Chimtu ga ✨
           </p>
           <p className="text-sm text-muted-foreground italic">
             Click each card to reveal why you're so special to me
@@ -114,7 +114,7 @@ const Index = () => {
           <div className="flex items-center justify-center gap-2">
             <Sparkles className="text-accent animate-pulse" />
             <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-              Make a Wish, Madhu!
+              Make a Wish, Chimtu ga!
             </h3>
             <Sparkles className="text-accent animate-pulse" />
           </div>

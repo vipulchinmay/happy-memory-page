@@ -97,7 +97,7 @@ const LoveLetter = () => {
             <div className="space-y-6 animate-fade-in">
               <div className="text-center pb-4 border-b border-primary/20">
                 <h3 className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  Dear Madhu,
+                  Dear Chimtu ga,
                 </h3>
                 <div className="flex items-center justify-center gap-2">
                   <Heart size={16} className="text-accent" fill="currentColor" />
@@ -124,7 +124,7 @@ const LoveLetter = () => {
                 </p>
 
                 <p className="text-lg font-semibold text-primary">
-                  Here's to you, Madhu - to your dreams, your happiness, and all the beautiful moments that lie ahead. May this year bring you everything your heart desires and more.
+                  Here's to you, Chimtu ga - to your dreams, your happiness, and all the beautiful moments that lie ahead. May this year bring you everything your heart desires and more.
                 </p>
 
                 <div className="pt-6 border-t border-primary/20 text-center">
