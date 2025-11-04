@@ -1,15 +1,62 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Heart, Sparkles } from "lucide-react";
+import confetti from "canvas-confetti";
 
 const LoveLetter = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const triggerConfetti = () => {
+    // Burst from multiple points for extra celebration
+    const duration = 3000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { 
+      startVelocity: 30, 
+      spread: 360, 
+      ticks: 60, 
+      zIndex: 0,
+      colors: ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C', '#FF69B4']
+    };
+
+    const randomInRange = (min: number, max: number) => {
+      return Math.random() * (max - min) + min;
+    };
+
+    const interval: NodeJS.Timeout = setInterval(() => {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) {
+        return clearInterval(interval);
+      }
+
+      const particleCount = 50 * (timeLeft / duration);
+
+      // Create confetti from left side
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
+      });
+      
+      // Create confetti from right side
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
+      });
+    }, 250);
+  };
+
+  const handleOpenLetter = () => {
+    setIsOpen(true);
+    triggerConfetti();
+  };
 
   return (
     <div className="relative w-full max-w-2xl mx-auto perspective-1000">
       {!isOpen ? (
         <div
-          onClick={() => setIsOpen(true)}
+          onClick={handleOpenLetter}
           className="cursor-pointer group"
         >
           <Card className="relative p-8 bg-gradient-to-br from-secondary to-card border-2 border-primary/30 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in">
