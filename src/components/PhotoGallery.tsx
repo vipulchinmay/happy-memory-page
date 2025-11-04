@@ -4,8 +4,14 @@ import photo2 from "@/assets/photo2.jpeg";
 import photo3 from "@/assets/photo3.jpeg";
 import photo4 from "@/assets/photo4.jpeg";
 import photo5 from "@/assets/photo5.jpeg";
-
-const photos = [photo1, photo2, photo3, photo4, photo5];
+import photo6 from "@/assets/photo6.jpeg";
+import photo7 from "@/assets/photo7.jpeg";
+import photo8 from "@/assets/photo8.jpeg";
+import photo9 from "@/assets/photo9.jpeg";
+import photo10 from "@/assets/photo10.jpeg";
+import photo11 from "@/assets/photo11.jpeg";
+import photo12 from "@/assets/photo12.jpeg";
+const photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12];
 
 const PhotoGallery = () => {
   return (
