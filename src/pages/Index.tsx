@@ -4,6 +4,7 @@ import { Heart, Sparkles, Cake } from "lucide-react";
 import FloatingHeart from "@/components/FloatingHeart";
 import PhotoGallery from "@/components/PhotoGallery";
 import LoveLetter from "@/components/LoveLetter";
+import ReasonsSection from "@/components/ReasonsSection";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -85,6 +86,26 @@ const Index = () => {
           </p>
         </div>
         <PhotoGallery />
+      </section>
+
+      {/* 52 Reasons Section */}
+      <section className="relative py-20 px-4">
+        <div className="text-center space-y-4 mb-12 animate-fade-in">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <Heart className="text-primary w-8 h-8" fill="currentColor" />
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              52 Reasons Why I Love You
+            </h2>
+            <Heart className="text-primary w-8 h-8" fill="currentColor" />
+          </div>
+          <p className="text-lg text-muted-foreground">
+            One for every week of the year, Madhu ✨
+          </p>
+          <p className="text-sm text-muted-foreground italic">
+            Click each card to reveal why you're so special to me
+          </p>
+        </div>
+        <ReasonsSection />
       </section>
 
       {/* Final Message */}
